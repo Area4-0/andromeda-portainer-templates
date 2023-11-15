@@ -2,6 +2,54 @@
   "version": "2",
   "templates": [
     {
+      "type": 2,
+      "title": "Ubuntu SSH Server",
+      "description": "Ubuntu latest with pre-configured openssh-server",
+      "note": "Refer to the <a href=\"https://hub.docker.com/r/linuxserver/openssh-server\">documentation page</a>",
+      "categories": ["server", "ssh"],
+      "platform": "linux",
+      "logo": "https://www.gravatar.com/avatar/43bbe74c9925ba1647aab2bbe6638f18.png",
+      "repository": {
+        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "stackfile": "stacks/ubuntu-openssh/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "USER_NAME",
+          "label": "Username",
+          "description": "The name of the user that is used to configure the container. It is also the name used for the log-in using ssh. Default value: openssh-server",
+          "default": "openssh-server"
+        },
+        {
+          "name": "PUBLIC_KEY",
+          "label": "Public Key",
+          "description": "The public key used to log-in into the server."
+        },
+        {
+          "name": "NODE",
+          "label": "Node name",
+          "description": "The name of the node on which the container will be deployed.",
+          "default": "iris.apice.unibo.it"
+        },
+        {
+          "name": "SUDO_ACCESS",
+          "label": "Sudo access",
+          "description": "Set to true if the user needs sudo permissions into the container. Default value: false",
+          "default": "false"
+        },
+        {
+          "name": "VOLUME",
+          "label": "Persistent volume name",
+          "description": "Name of the persistent volume to attach to the notebook on the path /home/${USER_NAME}/persistent"
+        },
+        {
+          "name": "PORT",
+          "label": "Port",
+          "description": "The port the SSH service will listen upon"
+        }
+      ]
+    },
+    {
       "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
@@ -1316,54 +1364,6 @@
         {
           "name": "LICENSE_KEY",
           "label": "License key"
-        }
-      ]
-    },
-    {
-      "type": 2,
-      "title": "Ubuntu SSH Server",
-      "description": "Ubuntu latest with pre-configured openssh-server",
-      "note": "Refer to the <a href=\"https://hub.docker.com/r/linuxserver/openssh-server\">documentation page</a>",
-      "categories": ["server", "ssh"],
-      "platform": "linux",
-      "logo": "https://www.gravatar.com/avatar/43bbe74c9925ba1647aab2bbe6638f18.png",
-      "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
-        "stackfile": "stacks/ubuntu-openssh/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "USER_NAME",
-          "label": "Username",
-          "description": "The name of the user that is used to configure the container. It is also the name used for the log-in using ssh. Default value: openssh-server",
-          "default": "openssh-server"
-        },
-        {
-          "name": "PUBLIC_KEY",
-          "label": "Public Key",
-          "description": "The public key used to log-in into the server."
-        },
-        {
-          "name": "NODE",
-          "label": "Node name",
-          "description": "The name of the node on which the container will be deployed.",
-          "default": "iris.apice.unibo.it"
-        },
-        {
-          "name": "SUDO_ACCESS",
-          "label": "Sudo access",
-          "description": "Set to true if the user needs sudo permissions into the container. Default value: false",
-          "default": "false"
-        },
-        {
-          "name": "VOLUME",
-          "label": "Persistent volume name",
-          "description": "Name of the persistent volume to attach to the notebook on the path /home/${USER_NAME}/persistent"
-        },
-        {
-          "name": "PORT",
-          "label": "Port",
-          "description": "The port the SSH service will listen upon"
         }
       ]
     }
