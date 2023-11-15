@@ -1346,7 +1346,8 @@
         {
           "name": "NODE",
           "label": "Node name",
-          "description": "The name of the node on which the container will be deployed."
+          "description": "The name of the node on which the container will be deployed.",
+          "default": "iris.apice.unibo.it"
         },
         {
           "name": "SUDO_ACCESS",

@@ -10,7 +10,7 @@ services:
     deploy:
       placement:
         constraints:
-          - "node.name==${NODE}"
+          - "node.hostname==${NODE}"
     volumes:
       - "data:/persistent"
     ports:
