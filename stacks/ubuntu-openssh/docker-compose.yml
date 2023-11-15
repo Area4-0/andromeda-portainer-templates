@@ -16,7 +16,6 @@ services:
     ports:
       - ${PORT}:2222
     working_dir: /persistent
-    command: [ "/bin/bash", "cd /persistent" ]
 
 volumes:
   data:

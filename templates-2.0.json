@@ -40,7 +40,7 @@
         {
           "name": "VOLUME",
           "label": "Persistent volume name",
-          "description": "Name of the persistent volume to attach to the notebook on the path /home/${USER_NAME}/persistent"
+          "description": "Name of the persistent volume that will be attached to the container on the path /persistent"
         },
         {
           "name": "PORT",
