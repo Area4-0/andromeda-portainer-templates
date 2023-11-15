@@ -1344,6 +1344,11 @@
           "description": "The public key used to log-in into the server."
         },
         {
+          "name": "NODE",
+          "label": "Node name",
+          "description": "The name of the node on which the container will be deployed."
+        },
+        {
           "name": "SUDO_ACCESS",
           "label": "Sudo access",
           "description": "Set to true if the user needs sudo permissions into the container. Default value: false",

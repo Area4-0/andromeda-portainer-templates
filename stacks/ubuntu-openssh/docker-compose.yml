@@ -7,6 +7,10 @@ services:
       PUBLIC_KEY: ${PUBLIC_KEY}
       SUDO_ACCESS: ${SUDO_ACCESS}
       USER_NAME: ${USER_NAME}
+    deploy:
+      placement:
+        constraints:
+          - "node.name==${NODE}"
     volumes:
       - "data:/persistent"
     ports:
