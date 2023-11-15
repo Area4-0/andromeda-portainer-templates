@@ -3,13 +3,12 @@ version: '3.9'
 services:
   openssh-server:
     image: linuxserver/openssh-server:latest
-    user: ${USER_NAME}
     environment:
       PUBLIC_KEY: ${PUBLIC_KEY}
       SUDO_ACCESS: ${SUDO_ACCESS}
       USER_NAME: ${USER_NAME}
     volumes:
-      - "data:/home/${USER_NAME}/persistent"
+      - "data:/persistent"
     ports:
       - ${PORT}:2222
 
