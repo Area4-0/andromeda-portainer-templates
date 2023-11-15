@@ -18,8 +18,6 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      placement:
-        constraints: [node.labels.capabilities.web == yes]
   db:
     image: "mysql:5.7"
     restart: always
@@ -34,9 +32,6 @@ services:
       - MYSQL_DATABASE=xwiki
     networks:
       - network
-    deploy:
-      placement:
-        constraints: [node.labels.capabilities.storage == yes]
     configs:
       - source: init_sql
         target: /docker-entrypoint-initdb.d/init.sql

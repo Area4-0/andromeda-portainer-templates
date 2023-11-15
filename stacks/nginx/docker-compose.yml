@@ -18,9 +18,6 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      placement:
-        constraints: 
-          - node.labels.capabilities.web == yes
   notebook:
     restart: always
     image: jupyter/base-notebook:latest
@@ -42,9 +39,7 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      placement:
-        constraints: 
-          - node.labels.capabilities.cpu==yes
+
 volumes:
   volume:
     name: ${CONF_VOLUME}

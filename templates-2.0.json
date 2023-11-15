@@ -736,79 +736,6 @@
       ]
     },
     {
-      "type": 1,
-      "title": "OPC Router",
-      "description": "No-code middleware for industrial applications. The OPC Router connects PLCs, PCS, SCADA, MES, SQL databases and servers, label printers, e-mail servers and erp-systems via OPC UA, MQTT, REST, CSV and many others without any programming effort",
-      "categories": ["edge"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/opc-router.png",
-      "image": "opcrouter/runtime:latest",
-      "ports": ["27017/tcp"],
-      "env": [
-        {
-          "name": "OR_DATABASE_USERNAME",
-          "label": "Database user"
-        },
-        {
-          "name": "MONGO_INITDB_ROOT_USERNAME",
-          "label": "Database password"
-        },
-        {
-          "name": "OR_DATABASE_PASSWORD",
-          "label": "Database root user"
-        },
-        {
-          "name": "MONGO_INITDB_ROOT_PASSWORD",
-          "label": "Database root password"
-        },
-        {
-          "name": "OR_I_ACCEPT_EULA",
-          "label": "Accept EULA",
-          "select": [
-            {
-              "text": "Yes, I accept",
-              "value": "true",
-              "default": true
-            }
-          ]
-        }
-      ],
-      "volumes": [
-        {
-          "container": "/data/db"
-        },
-        {
-          "container": "/root/.dotnet/corefx/cryptography/x509stores/"
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "Floating License Server",
-      "description": "License Server for Softing edgeConnector products",
-      "categories": ["edge"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/softing.png",
-      "image": "softingindustrial/floating-license-server:latest",
-      "ports": ["6200/tcp"],
-      "interactive": true,
-      "volumes": [
-        {
-          "container": "/licsrv/licenses"
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "EdgeConnector Modbus",
-      "description": "Connect Modbus TCP Sensors/PLCs and provide the data via OPC UA and MQTT",
-      "categories": ["edge"],
-      "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/softing.png",
-      "image": "softingindustrial/edgeconnector-modbus:latest",
-      "ports": ["443/tcp", "8099/tcp", "4897/tcp"]
-    },
-    {
       "type": 2,
       "title": "FileBrowser",
       "description": "A web-based GUI for browsing volumes",
@@ -900,45 +827,6 @@
     },
     {
       "type": 2,
-      "title": "Apice",
-      "description": "An XWiki instance tailored for Omicini's group",
-      "note": "Deploys an XWiki service backed by a MySQL 5.7 DBMS, with some fancy defaults",
-      "categories": ["web", "cms"],
-      "platform": "linux",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Logo-xwikiorange.svg/162px-Logo-xwikiorange.svg.png",
-      "repository": {
-        "url": "https://github.com/almaai-unibo/portainer-templates",
-        "stackfile": "stacks/apice/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "DB_VOLUME",
-          "label": "DB volume name",
-          "description": "The name of the (pre-existent) volume aimed at persisting the DB",
-          "default": "apice-db-volume"
-        },
-        {
-          "name": "XWIKI_VOLUME",
-          "label": "XWiki volume name",
-          "description": "The name of the (pre-existent) volume aimed at persisting the XWiki configuration and state files",
-          "default": "apice-xwiki-volume"
-        },
-        {
-          "name": "EXTERNAL_NETWORK",
-          "label": "External network name",
-          "description": "The name external network the web service should be attached to",
-          "default": "web-entry_private-network"
-        },
-        {
-          "name": "BASE_PATH",
-          "label": "Base path",
-          "description": "Relative path w.r.t. the service domain",
-          "default": "apice"
-        }
-      ]
-    },
-    {
-      "type": 2,
       "title": "GitLab Runner",
       "description": "A CI runner for a GitLab instance",
       "note": "Deploys a runner manager with a persistent configuration",
@@ -972,44 +860,8 @@
     },
     {
       "type": 2,
-      "title": "Ascend Mindspore Jupyter",
-      "description": "Jupyter Notebook with Ascend Mindspore tools",
-      "note": "Deploys a Jupyter Notebook with Ascend Minspore support and a persistent volume configuration",
-      "categories": ["ai", "machine-learning", "npu", "mindspore"],
-      "platform": "linux",
-      "logo": "https://seeklogo.com/images/H/huawei-logo-6535FE0552-seeklogo.com.png",
-      "repository": {
-        "url": "https://github.com/almaai-unibo/portainer-templates",
-        "stackfile": "stacks/ascend-mindspore-jupyter/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "MODEL",
-          "label": "Machine's NPU model",
-          "description": "NPUs model installed on the machine. Possible values are '3010' or '9000'. Default: '3010'.",
-          "default": "3010"
-        },
-        {
-          "name": "VOLUME",
-          "label": "Persistent volume name",
-          "description": "Name of the persistent volume to attach to the notebook on the path /persistent"
-        },
-        {
-          "name": "PORT",
-          "label": "Port",
-          "description": "The port the Jupyter service will listen upon"
-        },
-        {
-          "name": "PASSWORD_SECRET_NAME",
-          "label": "Password secret name",
-          "description": "The name of the secret containing the password of the user to be used for accessing the Jupyter service"
-        }
-      ]
-    },
-    {
-      "type": 2,
       "title": "Jupyter",
-      "description": "Jupyter Notebook (no GPU)",
+      "description": "Jupyter Notebook",
       "note": "Refer to the <a href=\"https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html\">Docker stacks documentation page</a>",
       "categories": ["ai", "machine-learning"],
       "platform": "linux",
@@ -1060,118 +912,6 @@
           "name": "FURTHER_PIP_PACKAGES",
           "label": "Further Python packages",
           "description": "Space separated list of Python packages to be installed in the container, via PIP. Leave empty if not needed."
-        }
-      ]
-    },
-    {
-      "type": 2,
-      "title": "Jupyter (GPU Nvidia)",
-      "description": "Jupyter Notebook with Nvidia support",
-      "note": "Refer to the <a href=\"https://hub.docker.com/r/cschranz/gpu-jupyter\"><code>cschranz/gpu-jupyter</code> image</a> on DockerHub",
-      "categories": ["ai", "machine-learning", "gpu"],
-      "platform": "linux",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png",
-      "repository": {
-        "url": "https://github.com/almaai-unibo/portainer-templates",
-        "stackfile": "stacks/jupyter-gpu/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "VERSION",
-          "label": "Notebook version",
-          "description": "Actual version of the cschranz/gpu-jupyter:${Notebook version} image. Default: latest.",
-          "default": "latest"
-        },
-        {
-          "name": "USER",
-          "label": "Username",
-          "description": "The name of the user within the container"
-        },
-        {
-          "name": "VOLUME",
-          "label": "Persistent volume name",
-          "description": "Name of the persistent volume to attach to the notebook on the path /home/${Username}/persistent"
-        },
-        {
-          "name": "PORT",
-          "label": "Port",
-          "description": "The port the Jupyter service will listen upon"
-        },
-        {
-          "name": "PASSWORD_SECRET_NAME",
-          "label": "Password secret name",
-          "description": "The name of the secret containing the password of the user to be used for accessing the Jupyter service"
-        },
-        {
-          "name": "FURTHER_APT_PACKAGES",
-          "label": "Further Ubuntu packages",
-          "description": "Space-separated list of Ubuntu packages to be installed in the container. Leave empty if not needed."
-        },
-        {
-          "name": "FURTHER_PIP_PACKAGES",
-          "label": "Further Python packages",
-          "description": "Space separated list of Python packages to be installed in the container, via PIP. Leave empty if not needed."
-        }
-      ]
-    },
-    {
-      "type": 2,
-      "title": "Jupyter + SSH (GPU Nvidia)",
-      "description": "Jupyter Notebook with Nvidia support and SSH access",
-      "note": "Refer to the <a href=\"https://hub.docker.com/r/cschranz/gpu-jupyter\"><code>cschranz/gpu-jupyter</code> image</a> on DockerHub",
-      "categories": ["ai", "machine-learning", "gpu"],
-      "platform": "linux",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png",
-      "repository": {
-        "url": "https://github.com/almaai-unibo/portainer-templates",
-        "stackfile": "stacks/jupyter-gpu-ssh/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "VERSION",
-          "label": "Notebook version",
-          "description": "Actual version of the cschranz/gpu-jupyter:${Notebook version} image. Default: latest.",
-          "default": "latest"
-        },
-        {
-          "name": "USER",
-          "label": "Username",
-          "description": "The name of the user within the container"
-        },
-        {
-          "name": "VOLUME",
-          "label": "Persistent volume name",
-          "description": "Name of the persistent volume to attach to the notebook on the path /home/${Username}/persistent"
-        },
-        {
-          "name": "PORT",
-          "label": "Port",
-          "description": "The port the Jupyter service will listen upon"
-        },
-        {
-          "name": "SSH_PORT",
-          "label": "SSH Port",
-          "description": "The port the SSH service will listen upon"
-        },
-        {
-          "name": "PASSWORD_SECRET_NAME",
-          "label": "Password secret name",
-          "description": "The name of the secret containing the password of the user to be used for accessing the Jupyter service"
-        },
-        {
-          "name": "FURTHER_APT_PACKAGES",
-          "label": "Further Ubuntu packages",
-          "description": "Space-separated list of Ubuntu packages to be installed in the container. Leave empty if not needed."
-        },
-        {
-          "name": "FURTHER_PIP_PACKAGES",
-          "label": "Further Python packages",
-          "description": "Space separated list of Python packages to be installed in the container, via PIP. Leave empty if not needed."
-        },
-        {
-          "name": "AUTHORIZED_KEYS_CONFIG_NAME",
-          "label": "Authorized Keys config name",
-          "description": "The name of the config containing the authorized public keys which can access the SSH service"
         }
       ]
     },
@@ -1576,6 +1316,48 @@
         {
           "name": "LICENSE_KEY",
           "label": "License key"
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "title": "Ubuntu SSH Server",
+      "description": "Ubuntu latest with pre-configured openssh-server",
+      "note": "Refer to the <a href=\"https://hub.docker.com/r/linuxserver/openssh-server\">documentation page</a>",
+      "categories": ["server", "ssh"],
+      "platform": "linux",
+      "logo": "https://www.gravatar.com/avatar/43bbe74c9925ba1647aab2bbe6638f18.png",
+      "repository": {
+        "url": "https://github.com/almaai-unibo/portainer-templates",
+        "stackfile": "stacks/ubuntu-openssh/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "USER_NAME",
+          "label": "Username",
+          "description": "The name of the user that is used to configure the container. It is also the name used for the log-in using ssh. Default value: openssh-server",
+          "default": "openssh-server"
+        },
+        {
+          "name": "PUBLIC_KEY",
+          "label": "Public Key",
+          "description": "The public key used to log-in into the server."
+        },
+        {
+          "name": "SUDO_ACCESS",
+          "label": "Sudo access",
+          "description": "Set to true if the user needs sudo permissions into the container. Default value: false",
+          "default": "false"
+        },
+        {
+          "name": "VOLUME",
+          "label": "Persistent volume name",
+          "description": "Name of the persistent volume to attach to the notebook on the path /home/${USER_NAME}/persistent"
+        },
+        {
+          "name": "PORT",
+          "label": "Port",
+          "description": "The port the SSH service will listen upon"
         }
       ]
     }

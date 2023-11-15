@@ -32,9 +32,6 @@ services:
     deploy:
       mode: replicated
       replicas: 1
-      placement:
-        constraints: 
-          - node.labels.capabilities.cpu==yes
     secrets:
       - jupyter_password
 secrets:
