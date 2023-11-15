@@ -15,6 +15,7 @@ services:
       - "data:/persistent"
     ports:
       - ${PORT}:2222
+    working_dir: "/persistent"
 
 volumes:
   data:
