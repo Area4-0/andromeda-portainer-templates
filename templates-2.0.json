@@ -10,7 +10,7 @@
       "platform": "linux",
       "logo": "https://www.gravatar.com/avatar/43bbe74c9925ba1647aab2bbe6638f18.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/ubuntu-openssh/docker-compose.yml"
       },
       "env": [
@@ -58,7 +58,7 @@
       "platform": "linux",
       "logo": "https://www.dmuth.org/wp-content/uploads/2019/03/docker-logo.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/dev-container/docker-compose.yml"
       },
       "env": [
@@ -502,7 +502,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/redis-cluster/docker-stack.yaml"
       },
       "env": [
@@ -828,7 +828,7 @@
       "platform": "linux",
       "logo": "https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=2,format=auto/https%3A%2F%2F3149836655-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-M8KDxOujDoPpJyJJ5_i%252Favatar-1590579241040.png%3Fgeneration%3D1590579241552005%26alt%3Dmedia",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/filebrowser/docker-compose.yml"
       },
       "env": [
@@ -848,7 +848,7 @@
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Logo-xwikiorange.svg/162px-Logo-xwikiorange.svg.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/xwiki/docker-compose.yml"
       },
       "env": [
@@ -873,7 +873,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/gitlab/docker-compose.yml"
       },
       "env": [
@@ -918,7 +918,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/gitlab-runner/docker-compose.yml"
       },
       "env": [
@@ -951,7 +951,7 @@
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/207px-Jupyter_logo.svg.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/jupyter/docker-compose.yml"
       },
       "env": [
@@ -1008,7 +1008,7 @@
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/320px-Nginx_logo.svg.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/nginx/docker-compose.yml"
       },
       "env": [
@@ -1058,7 +1058,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/portainer-agent/docker-stack.yml"
       }
     },
@@ -1085,7 +1085,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/ironfunctions/docker-stack.yml"
       }
     },
@@ -1098,7 +1098,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cockroachdb.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/cockroachdb/docker-stack.yml"
       }
     },
@@ -1111,7 +1111,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/wordpress/docker-stack.yml"
       },
       "env": [
@@ -1131,7 +1131,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/wordpress/docker-compose.yml"
       },
       "env": [
@@ -1151,7 +1151,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/openamt/docker-compose.yml"
       },
       "env": [
@@ -1196,7 +1196,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/microsoft-oms/docker-stack.yml"
       },
       "env": [
@@ -1220,7 +1220,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
       },
       "env": [
@@ -1242,7 +1242,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/datadog-agent/docker-stack.yml"
       },
       "env": [
@@ -1280,7 +1280,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/fdo/docker-stack.yml"
       },
       "env": [
@@ -1302,7 +1302,7 @@
       "platform": "linux",
       "logo": "",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/dokku/docker-compose.yml"
       },
       "env": [
@@ -1357,7 +1357,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/liveswitch/docker-stack.yml"
       },
       "env": [
@@ -1375,7 +1375,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
-        "url": "https://github.com/almaai-unibo/andromeda-portainer-templates",
+        "url": "https://github.com/Area4-0/andromeda-portainer-templates",
         "stackfile": "stacks/liveswitch/docker-compose.yml"
       },
       "env": [
